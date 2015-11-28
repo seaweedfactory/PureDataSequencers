@@ -1,6 +1,8 @@
 # PureDataSequencers
 Alternative experimental sequencers for Pure Data (pd).
 
+# About Pure Data Computer Music System
+These sequencers are meant to be used by the Pure Data Computer Music System. This is a free and open version of the MSP environment. Pure Data is available at http://puredata.info/.
 
 # RandomizedDivision
 This sequencer chops an audio file to pieces and plays them back in a randomized order using a form of granular synthesis. The size of the pieces is a variable power of 2 division if "vary note length" is checked. It is best to start the program with this option checked. To begin using the sequencer, click the "click here to start" button. A prompt will appear for an audio file. The program is configured to use 44100 as its sample rate, this can be adjusted by changing the "/ 44.1" step towards the middle.
