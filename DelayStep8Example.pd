@@ -1,0 +1,40 @@
+#N canvas 0 0 1054 658 10;
+#X obj -161 69 DelayStep8;
+#X obj -131 38 metro;
+#X obj -131 14 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom -78 38 5 0 0 0 - - -;
+#X obj -78 14 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 36 312 SimpleSampler;
+#X obj 36 339 SimpleSampler;
+#X obj 36 365 SimpleSampler;
+#X obj 36 390 SimpleSampler;
+#X obj 125 412 *~;
+#X obj 51 128 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 106 461 dac~ 1 2;
+#X text 30 101 Main Volume;
+#X text 22 413 Sample Bank;
+#X text -289 211 Channel Enable (1-4);
+#X text -284 70 Delay Between Steps;
+#X text -251 281 Hit Indicator;
+#X text -57 12 Step;
+#X text -42 38 Step Delay;
+#X text -224 14 Start Playback;
+#X connect 0 0 5 0;
+#X connect 0 1 6 0;
+#X connect 0 2 7 0;
+#X connect 0 3 8 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 0 1;
+#X connect 3 0 1 1;
+#X connect 4 0 3 0;
+#X connect 5 0 9 0;
+#X connect 6 0 9 0;
+#X connect 7 0 9 0;
+#X connect 8 0 9 0;
+#X connect 9 0 11 0;
+#X connect 9 0 11 1;
+#X connect 10 0 9 1;

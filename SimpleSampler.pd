@@ -1,0 +1,22 @@
+#N canvas 0 66 1280 734 10;
+#X obj 106 182 soundfiler;
+#X obj 3 4 bng 15 250 50 0 empty empty empty 0 0 0 10 -257985 -1 -1
+;
+#X obj 23 242 outlet~;
+#X obj 106 104 openpanel;
+#X obj 256 -2 table \$0-sample;
+#X obj 22 204 tabplay~ \$0-sample;
+#X msg 106 156 read -resize \$1 \$2-sample;
+#X obj 106 130 pack s \$0;
+#X obj 22 4 bng 15 250 50 0 empty empty empty 17 7 0 10 -4034 -1 -1
+;
+#X text 7 501 comment;
+#X obj 22 -36 inlet;
+#X connect 1 0 3 0;
+#X connect 3 0 7 0;
+#X connect 5 0 2 0;
+#X connect 6 0 0 0;
+#X connect 7 0 6 0;
+#X connect 8 0 5 0;
+#X connect 10 0 8 0;
+#X coords 0 -1 1 1 41 22 2 0 0;

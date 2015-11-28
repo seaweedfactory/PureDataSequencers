@@ -1,0 +1,18 @@
+#N canvas 0 0 1280 734 10;
+#X obj 169 205 random 1000;
+#X obj 169 285 <;
+#X obj 169 229 / 10;
+#X obj 169 340 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 169 153 inlet;
+#X obj 169 372 outlet;
+#X obj 169 313 select 1 0;
+#X obj 261 154 inlet;
+#X connect 0 0 2 0;
+#X connect 1 0 6 0;
+#X connect 2 0 1 0;
+#X connect 3 0 5 0;
+#X connect 4 0 0 0;
+#X connect 6 0 3 0;
+#X connect 7 0 1 1;
+#X coords 0 0 1 1 400 22 0;
